@@ -32,5 +32,49 @@ echo '<br>' ."Total revenue earned: $" . $total_revenue;
 echo '<br>' ."Total revenue earned: $${total_revenue}";
 
 
+/*---------- Question Two-----------------------------------------------
+A clothing store wants to calculate the total profit form a recent sale. If the store sold 50 dresses  at a cost of $25 each and sold them for $50 each, how can PHP variables be used to store this information, and how can concatenation be used to display the total profits earned?
+
+*/ 
+
+echo '<h1> Question Two</h1>';
+$sold_dresses =50;
+
+// Here i display the sold dresses!
+
+echo $sold_dresses;
+
+$price_per_dress = 50; // But in dollars!
+
+// Here i display the price per dress!
+
+echo '<br>' .$price_per_dress; // But with no dollar sign!
+
+$costPerDress = 25; 
+
+// Here i display the cost per dress
+
+echo '<br>' .$costPerDress;
+
+// Since finding profit is simple using this formula: Total Revenue - Total Expenses = Profit. I will use this formular as well.
+
+$total_dress_revenue = $sold_dresses * $price_per_dress;
+
+// Then, here i calculate the totalcost of the dresses:
+
+$totalCost = $sold_dresses * $costPerDress;
+
+
+// Finally, i calculate the total profit:
+$totalProfit = $total_dress_revenue - $totalCost;
+
+
+// To display the profit earned using concatenation, we can use the "." operator to concatenate the string "Total profit earned: $" with the value of the $total_revenue variable:
+
+echo '<br>' ."The total profit from the sale of " . $sold_dresses . " dresses is $" . $totalProfit . ".";
+
+// Or we can also use the following method of concatenation method to get the same results;
+
+echo '<br>' ."The total profit from the sale of ${sold_dresses} dresses is $${totalProfit}";
 
 ?>
