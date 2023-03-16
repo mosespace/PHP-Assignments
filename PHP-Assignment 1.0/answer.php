@@ -119,4 +119,38 @@ echo '<br>' ."The total cost of materials used for the project is $" . $total_co
 echo '<br>' ."The total cost of materials used for the project is $${total_costs}";
 
 
+/*---------- Question Four--------------------------------------------
+A grocery store wants to calculate the total weight of apples sold in a week. If the store sold 200 pounds of apples on Monday, 150 pounds on Wednesday, and 175 pounds on fridady, how can PHP variables be used to store this information and how can concatenation be used to display the totla weight of apples sold in the week?
+
+*/ 
+
+echo '<h1> Question Four</h1>';
+$apples_monday = 200;
+
+// Here i display the apples sold on Monday!
+
+echo '<br>' .$apples_monday;
+
+$apples_wednesday = 150;
+
+// Here i display the apples sold on Wednesday!
+
+echo '<br>' .$apples_wednesday;
+
+$apples_friday = 175;
+
+// Here i display the apples sold on Fridays!
+
+echo '<br>' .$apples_friday;
+
+// Here icalculate the total weight of apples sold by summing the weight of apples sold on each day all together in the total cost variable.
+
+$total_apples = $apples_monday + $apples_wednesday + $apples_friday;
+
+echo '<br>' ."The total weight of apples sold in the week is " . $total_apples . " pounds.";
+
+// Or also the following method of concatenation method can be used to get the same results;
+
+echo '<br>' ."The total weight of apples sold in the week is ${total_apples} pounds.";
+
 ?>
