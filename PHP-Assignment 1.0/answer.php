@@ -12,7 +12,6 @@ $cups_sold = 120;
 
 echo $cups_sold;
 
-
 $price_per_cup = 2.50;
 
 // Here i display the price per cup!
@@ -27,8 +26,7 @@ $total_revenue = $cups_sold * $price_per_cup;
 
 echo '<br>' ."Total revenue earned: $" . $total_revenue;
 
-// Or we can also use the following method of concatenation to get the same results;
-
+// Or also the following method of concatenation method can be used to get the same results;
 echo '<br>' ."Total revenue earned: $${total_revenue}";
 
 
@@ -73,8 +71,52 @@ $totalProfit = $total_dress_revenue - $totalCost;
 
 echo '<br>' ."The total profit from the sale of " . $sold_dresses . " dresses is $" . $totalProfit . ".";
 
-// Or we can also use the following method of concatenation method to get the same results;
+// Or also the following method of concatenation method can be used to get the same results;
 
 echo '<br>' ."The total profit from the sale of ${sold_dresses} dresses is $${totalProfit}";
+
+
+/*---------- Question Three--------------------------------------------
+A construction company needs to calculate the total costs of materials used for a recent project. If the project required 300 bags of cement at $10 per bag and 1000 bricks at $0.50 per brick, how can PHP variables be used to store this information, and how can concatenation be used to display the total cost of materials used?
+
+*/ 
+
+echo '<h1> Question Three</h1>';
+$cement_bags = 300;
+
+// Here i display the cement bags!
+
+echo '<br>' .$cement_bags;
+
+$cement_cost_per_bag = 10;
+
+// Here i display the cost per cement bag!
+
+echo '<br>' .$cement_cost_per_bag;
+
+$bricks = 1000;
+
+// Here i display the number of bricks!
+
+echo '<br>' .$bricks;
+
+$brick_cost_each = 0.5;
+
+// Here i display the number of cost each brick buys!
+
+echo '<br>' .$brick_cost_each;
+
+// Here icalculate the total cost by multiplying the quantity and cost of each material and summing the results all together in the total cost variable.
+
+$total_costs = ($cement_bags * $cement_cost_per_bag) + ($bricks * $brick_cost_each);
+
+// Finally, i use concatenation to display the total cost of materials used by concatenating the string "The total cost of materials used for the project is $" with the value in the variable of $total_cost.
+
+echo '<br>' ."The total cost of materials used for the project is $" . $total_costs;
+
+// Or also the following method of concatenation method can be used to get the same results;
+
+echo '<br>' ."The total cost of materials used for the project is $${total_costs}";
+
 
 ?>
