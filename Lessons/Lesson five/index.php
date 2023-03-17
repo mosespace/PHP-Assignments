@@ -37,5 +37,10 @@ $total =function($qty, $price){
     return $qty*$price;
 };
 
+echo $total(4, 600). '<br>';
 
+// Example Five ---------------------------------
+$multiply =fn($num1, $num2) => $num1 *$num2;
+
+echo $multiply(3,3). '<br>';
 ?>
