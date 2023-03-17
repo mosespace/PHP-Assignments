@@ -43,4 +43,25 @@ echo $total(4, 600). '<br>';
 $multiply =fn($num1, $num2) => $num1 *$num2;
 
 echo $multiply(3,3). '<br>';
+
+/* Trial Question:
+A restaurant wants to calculate the tip amount for a table of 4 customers. Write a PHP function that takes in the total bill amount and the percentage of the tip as parameters, and returns the total tip amount and the total bill amount including the tip.
+*/ 
+
+// Calculate the tip amount!
+
+function calcTip($totalbillAmount, $tipPercentage){
+
+    // Calculating the tip amount
+    $tipAmount = $tipPercentage * $totalbillAmount / 100;
+
+    // Calculate the totalBill amount!
+    $totalBill = $totalbillAmount + $tipAmount; 
+
+    $result = "The total Tip amount Is; {$tipAmount} and the Total Bill is; {$totalBill}";
+    return $result;
+}
+
+echo calcTip(100000,10);
+
 ?>
