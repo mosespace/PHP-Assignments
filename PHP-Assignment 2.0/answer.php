@@ -139,4 +139,5 @@ if ($nationality == "Domestic" && $is_orphan) {
 Finally, the calculated tuition is outputted using an echo statement below .*/
 
   echo '<br>' ."Tuition: $" . $tuition;
+  
 ?>
