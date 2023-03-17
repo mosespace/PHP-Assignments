@@ -12,5 +12,13 @@ function calcAge(){
 // 2 Invoke the function
 calcAge();
 
+// Example Two ----------------------------------
 
+function subtract($x, $y){
+    return $x - $y;
+}
+
+$z =subtract(10, 5);
+
+echo $z. '<br>';
 ?>
