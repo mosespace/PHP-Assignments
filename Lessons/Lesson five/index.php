@@ -31,4 +31,11 @@ function calcArea($base=0, $height=0){
 $area = calcArea(10,25);
 echo $area. '<br>';
 
+// Example Four ---------------------------------
+
+$total =function($qty, $price){
+    return $qty*$price;
+};
+
+
 ?>
