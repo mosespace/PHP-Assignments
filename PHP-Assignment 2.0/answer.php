@@ -70,4 +70,45 @@ echo 'The Average score is: ' . $averageScore . '<br>';
 
 // Here i echo the final grade score: !
 echo 'The Final grade is: ' . $finalGrade . '<br>';
+
+echo '<h1>Question Two</h1>';
+/*---------- Question Two--------------------------------------------
+Suppose you are tasked with writing a PHP program that calculates the tuition of a
+student at a university based on their characteristics. You are given three variables:
+$nationality (a string representing the student's nationality), $is_orphan (a boolean
+indicating whether the student is an orphan), and $a_level_points (an integer
+representing the student's A level performance points).
+Write an if statement that calculates the student's tuition according to the following
+rules:
+• Domestic students who are not orphans pay $10,000 in tuition
+• International students who are not orphans pay $20,000 in tuition
+• Domestic orphans with A level performance points greater than or equal to 45
+pay $5,000 in tuition
+• Domestic orphans with A level performance points less than 45 pay $8,000 in
+tuition
+• International orphans with A level performance points greater than or equal to
+45 pay $15,000 in tuition
+• International orphans with A level performance points less than 45 pay $18,000
+in tuition
+Write the complete PHP if statement to calculate the tuition of a student based on their
+characteristics.
+
+*/
+// Solution Begins-----------------------------------------------------------------------------------------
+$nationality = "Domestic"; // or "International";
+
+// Here i display the nationality of the student!
+echo '<br>' .$nationality;
+
+$is_orphan = true; // or false
+
+// Here i display wether the student is orpahn or not!
+echo '<br>' .$is_orphan;
+
+$a_level_points= 50;
+
+// Here i display the points scored by students in a level!
+echo '<br>' .$a_level_points;
+
+
 ?>
