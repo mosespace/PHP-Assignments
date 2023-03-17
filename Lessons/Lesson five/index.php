@@ -21,4 +21,14 @@ function subtract($x, $y){
 $z =subtract(10, 5);
 
 echo $z. '<br>';
+
+// Example Three ---------------------------------
+
+function calcArea($base=0, $height=0){
+    return 0.5*$base*$height;
+}
+
+$area = calcArea(10,25);
+echo $area. '<br>';
+
 ?>
