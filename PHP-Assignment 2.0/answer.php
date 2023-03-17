@@ -70,6 +70,8 @@ echo 'The Average score is: ' . $averageScore . '<br>';
 
 // Here i echo the final grade score: !
 echo 'The Final grade is: ' . $finalGrade . '<br>';
+//....................................End Of Question one.................................................
+
 
 echo '<h1>Question Two</h1>';
 /*---------- Question Two--------------------------------------------
@@ -139,5 +141,5 @@ if ($nationality == "Domestic" && $is_orphan) {
 Finally, the calculated tuition is outputted using an echo statement below .*/
 
   echo '<br>' ."Tuition: $" . $tuition;
-  
+
 ?>
