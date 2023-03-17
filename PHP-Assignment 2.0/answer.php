@@ -134,6 +134,10 @@ if ($nationality == "Domestic" && $is_orphan) {
     $tuition = 20000; /*• International students who are not orphans pay $20,000 in tuition. */
   }
   
+  /*The code i've written above checks the different conditions one by one, starting with Domestic orphans, Domestic non-orphans, International orphans, and finally, International non-orphans. If a condition is met,  i assigned the corresponding tuition value to a new variable called $tuition .
+
+Finally, the calculated tuition is outputted using an echo statement below .*/
+
   echo '<br>' ."Tuition: $" . $tuition;
 
 
