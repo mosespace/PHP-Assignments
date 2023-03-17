@@ -110,5 +110,31 @@ $a_level_points= 50;
 // Here i display the points scored by students in a level!
 echo '<br>' .$a_level_points;
 
+// Below are the If statements to solve the question above ------------------------------------------------
+
+if ($nationality == "Domestic" && $is_orphan) {
+    if ($a_level_points >= 45) {
+      $tuition = 5000; /*• Domestic orphans with A level performance points greater than or equal to 45
+      pay $5,000 in tuition*/ 
+    } else {
+      $tuition = 8000; /*• Domestic orphans with A level performance points less than 45 pay $8,000 in
+      */
+    }
+  } elseif ($nationality == "Domestic" && !$is_orphan) {
+    $tuition = 10000; /*• Domestic students who are not orphans pay $10,000 in tuition */
+  } elseif ($nationality == "International" && $is_orphan) {
+    if ($a_level_points >= 45) {
+      $tuition = 15000; /*• International orphans with A level performance points greater than or equal to
+      45 pay $15,000 in tuition. */
+    } else {
+      $tuition = 18000; /*• International orphans with A level performance points less than 45 pay $18,000
+      in tuition. */
+    }
+  } elseif ($nationality == "International" && !$is_orphan) {
+    $tuition = 20000; /*• International students who are not orphans pay $20,000 in tuition. */
+  }
+  
+  echo '<br>' ."Tuition: $" . $tuition;
+
 
 ?>
