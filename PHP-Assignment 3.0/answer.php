@@ -37,4 +37,23 @@ $convertedValue = convertCurrency($value, $fromCurrency, $toCurrency);
 echo "$value $fromCurrency is equal to $convertedValue $toCurrency";
 // ---------------------------------End Of Question 2----------------------------
 
+
+/* ----------------------------Question 3----------------------------------------
+A fitness center wants to track the body mass index (BMI) of their customers. Write a PHP function that takes in the customer's height and weight as parameters and returns their BMI. Use the BMI formula to calculate the value.*/
+
+//The formula for BMI is weight in kilograms divided by height in meters squared.
+function calculateBMI($height, $weight) {
+    $bmi = $weight / ($height * $height); // The result is returned as a floating-point number representing the BMI.
+    return $bmi;
+}
+
+$height = 10; // meters
+$weight = 10; // kilograms
+
+$bmi = calculateBMI($height, $weight);
+echo '<br>' ."The customer's BMI is: " . $bmi; 
+
+// ---------------------------------End Of Question 3----------------------------
+
+
 ?> 
