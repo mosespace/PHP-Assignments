@@ -56,4 +56,23 @@ echo '<br>' ."The customer's BMI is: " . $bmi;
 // ---------------------------------End Of Question 3----------------------------
 
 
+/* ----------------------------Question 4----------------------------------------
+An online store wants to calculate the shipping cost for a purchase based on the weight and destination of the package. Write a PHP function that takes in the weight of the package and the desitination country as parameters, and returns the shipping cost. Use real shipping rates for the destination country.*/ 
+
+function calculateShippingCost($weight, $destinationCountry) {
+    $shippingRate = 2.5; // flat rate per kilogram
+
+    $shippingCost = $weight * $shippingRate; // I calculate the shipping cost by multiplying the weight by a flat rate per kilogram
+
+    return $shippingCost;
+}
+
+$weight = 2; // weight in kilograms
+$destinationCountry = 'UG'; // destination country
+
+$shippingCost = calculateShippingCost($weight, $destinationCountry);
+echo "The shipping cost to $destinationCountry for a $weight kg package is $shippingCost USD";
+
+// ---------------------------------End Of Question 4----------------------------
+
 ?> 
